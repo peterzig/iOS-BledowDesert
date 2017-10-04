@@ -1,25 +1,201 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Błe_do_w" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="KvQ-J1-5Ig">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="676"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pustynia Błędowska" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhw-Gz-2JR">
+                                <rect key="frame" x="1" y="28" width="372" height="82"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" 50°21′17,18″N   19°30′53,31″E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-hj-1Lk">
+                                <rect key="frame" x="46" y="104" width="282" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Największy w Polsce obszar lotnych piasków (około 33 km²) leżący na pograniczu Wyżyny Śląskiej i Wyżyny Olkuskiej." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRI-mU-VP6">
+                                <rect key="frame" x="60" y="243" width="254" height="152"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="4ss-iJ-odE"/>
+                                    <constraint firstAttribute="width" constant="254" id="EGx-tD-61f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9J-wp-U9w">
+                                <rect key="frame" x="104" y="476" width="167" height="30"/>
+                                <color key="backgroundColor" red="0.98593205213546753" green="0.0" blue="0.18543638288974762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="2mj-bJ-NLP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4cP-WH-u3u"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="167" id="7Kq-qk-jH2"/>
+                                    <constraint firstAttribute="height" constant="30" id="xf9-QD-3kz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Dowiedz się więcej">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EWg-Pz-0zz" kind="show" id="sRS-cQ-G20"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rhw-Gz-2JR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16M-5G-aHR"/>
+                            <constraint firstItem="k9J-wp-U9w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="2Rp-bN-S4f"/>
+                            <constraint firstItem="rhw-Gz-2JR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="1" id="6R2-2z-0rY"/>
+                            <constraint firstItem="SVQ-hj-1Lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="B7b-iT-st4"/>
+                            <constraint firstAttribute="trailing" secondItem="rhw-Gz-2JR" secondAttribute="trailing" constant="2" id="Cw2-xf-eVy"/>
+                            <constraint firstItem="rhw-Gz-2JR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="KkO-h0-6vs"/>
+                            <constraint firstItem="JRI-mU-VP6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="LU1-wT-zeX"/>
+                            <constraint firstItem="SVQ-hj-1Lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="OF3-fa-FXW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k9J-wp-U9w" secondAttribute="trailing" constant="88" id="VW4-u9-Mq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JRI-mU-VP6" secondAttribute="trailing" constant="45" id="YTd-j2-vxg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k9J-wp-U9w" secondAttribute="bottom" constant="161" id="bE0-RC-nTt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JRI-mU-VP6" secondAttribute="trailing" constant="45" id="eXW-3d-5MS"/>
+                            <constraint firstItem="SVQ-hj-1Lk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyH-fD-kht"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k9J-wp-U9w" secondAttribute="bottom" constant="161" id="j5t-dY-8mS"/>
+                            <constraint firstItem="JRI-mU-VP6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="jrb-ep-Jvh"/>
+                            <constraint firstItem="JRI-mU-VP6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o6q-ac-Av1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SVQ-hj-1Lk" secondAttribute="trailing" constant="31" id="p4M-lh-YS7"/>
+                            <constraint firstItem="JRI-mU-VP6" firstAttribute="top" secondItem="SVQ-hj-1Lk" secondAttribute="bottom" constant="119" id="tc4-KO-RTg"/>
+                            <constraint firstItem="JRI-mU-VP6" firstAttribute="top" secondItem="SVQ-hj-1Lk" secondAttribute="bottom" constant="119" id="vDm-3H-w54"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreBtn" destination="k9J-wp-U9w" id="0nl-pE-bxj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="180" y="-264.01799100449779"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8qB-XB-5QM">
+            <objects>
+                <viewController id="EWg-Pz-0zz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FuX-5p-HOE"/>
+                        <viewControllerLayoutGuide type="bottom" id="w1Q-uX-clw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mfG-gy-jHY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="fjp-Pv-W1r">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ULv-hn-Rwi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6r-hd-Slv">
+                                <rect key="frame" x="20" y="49" width="58" height="30"/>
+                                <state key="normal" title="Wstecz">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2TV-OR-aMH"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-b8-SOR">
+                                <rect key="frame" x="28" y="161" width="343" height="506"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="clx-82-ryw">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="73.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Powierzchnia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIv-PN-B53">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="33 km²" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpg-d6-Bsy">
+                                                <rect key="frame" x="0.0" y="20" width="343" height="53.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2QX-ns-AGf">
+                                        <rect key="frame" x="0.0" y="88.5" width="343" height="417.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="800" text="Historia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsu-Z0-sad">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvR-zM-8Se">
+                                                <rect key="frame" x="0.0" y="20" width="342.5" height="397.5"/>
+                                                <string key="text">Rozciąga się od Błędowa (dzielnicy Dąbrowy Górniczej) na zachodzie do gminy Klucze na wschodzie. Granicą północną pustyni jest wieś Chechło, a na południu jest ograniczona dużym obszarem leśnym. Pustynia ma niecałe 10 km długości i szerokość do 4 km. Piaski mają średnią miąższość 40 m, maksymalnie 70 m. Przez pustynię, ze wschodu na zachód, przepływa Biała Przemsza.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="O Pustyni Błędowskiej" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-g4-V2j">
+                                <rect key="frame" x="31" y="72" width="312" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ca6-b8-SOR" firstAttribute="top" secondItem="fjp-Pv-W1r" secondAttribute="bottom" constant="33" id="4Bk-f3-xZd"/>
+                            <constraint firstItem="w1Q-uX-clw" firstAttribute="top" secondItem="Ca6-b8-SOR" secondAttribute="bottom" id="F6n-z9-beG"/>
+                            <constraint firstItem="l6r-hd-Slv" firstAttribute="leading" secondItem="mfG-gy-jHY" secondAttribute="leadingMargin" constant="4" id="M2U-Jl-wF6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ca6-b8-SOR" secondAttribute="trailing" id="QGn-Gk-Zgu"/>
+                            <constraint firstItem="l6r-hd-Slv" firstAttribute="leading" secondItem="mfG-gy-jHY" secondAttribute="leadingMargin" id="SCq-mn-wKc"/>
+                            <constraint firstItem="l6r-hd-Slv" firstAttribute="top" secondItem="FuX-5p-HOE" secondAttribute="bottom" constant="29" id="i0F-9V-job"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cp4-g4-V2j" secondAttribute="trailing" constant="16" id="lC2-Nu-abh"/>
+                            <constraint firstItem="cp4-g4-V2j" firstAttribute="top" secondItem="FuX-5p-HOE" secondAttribute="bottom" constant="52" id="luD-nb-buz"/>
+                            <constraint firstItem="fjp-Pv-W1r" firstAttribute="top" secondItem="mfG-gy-jHY" secondAttribute="top" id="olN-zS-i7Z"/>
+                            <constraint firstItem="Ca6-b8-SOR" firstAttribute="leading" secondItem="mfG-gy-jHY" secondAttribute="leadingMargin" id="xmp-Nc-jwv"/>
+                            <constraint firstItem="fjp-Pv-W1r" firstAttribute="leading" secondItem="mfG-gy-jHY" secondAttribute="leading" id="ynm-sh-fOq"/>
+                            <constraint firstItem="cp4-g4-V2j" firstAttribute="leading" secondItem="mfG-gy-jHY" secondAttribute="leadingMargin" constant="15" id="z8r-wf-DdY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXk-Yk-dNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="-259"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="488" height="807"/>
+        <image name="bg2" width="1021" height="290"/>
+    </resources>
 </document>
